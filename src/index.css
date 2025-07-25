@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.swiper-button-prev:after, .swiper-button-next:after
+{
+    font-size: 1rem;
+    font-weight: 600;
+}
+@keyframes zoomIn {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+.animate-zoomIn {
+  animation: zoomIn 5s ease-in-out infinite alternate;
+}
+/* 👇 Global font styles for headings */
+h1, h2, h3, h4 {
+  @apply font-cairo;
+}
+
+h5, h6, p {
+  @apply font-lato;
+}
